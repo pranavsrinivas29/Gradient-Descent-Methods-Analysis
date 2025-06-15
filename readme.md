@@ -63,36 +63,42 @@ For detailed theoretical information, please do read my related blog on Medium [
 
 ## Plots
 ![Adam Loss Curve](Plots/Adam.png)
+
 1. Adam
 Convergence Speed: Very fast – significant drop within the first 2 epochs.
 Stability: Smooth and steadily declining.
 Generalization: Excellent; training and validation curves are very close.
 
 ![SGD Loss Curve](Plots/SGD.png)
+
 2. SGD
 Convergence Speed: Slower than Adam; steeper learning curve for the first few epochs.
 Stability: Acceptable but less smooth than Adam.
 Generalization: Good, but not optimal.
 
 ![RMSprop Loss Curve](Plots/RMSprop.png)
+
 3. RMSprop
 Convergence Speed: Fairly fast and stable.
 Stability: Smooth, but slightly higher gap between training and validation loss than Adam.
 Generalization: Good; some mild overfitting signs.
 
 ![Adagrad Loss Curve](Plots/Adagrad.png)
+
 4. Adagrad
 Convergence Speed: Poor; very slow compared to others.
 Stability: Smooth but not efficient.
 Generalization: Poor – validation loss significantly above training loss.
 
 ![SGD Loss Curve](Plots/SGD_Momentum.png)
+
 5. SGD with Momentum
 Convergence Speed: Good – slightly better than plain SGD.
 Stability: High; smooth decline.
 Generalization: Excellent – very small train-val loss gap.
 
 ![Rprop Loss Curve](Plots/Rprop.png)
+
 6. Rprop
 Convergence Speed: Slow.
 Stability: Smooth but flat – training loss barely improves after epoch 1.
@@ -119,12 +125,9 @@ for opt in ['SGD', 'SGD_momentum', 'Adam', 'RMSprop', 'Adagrad', 'Rprop']:
 
 ## 📦 Folder Structure
 ```
-optimizer_regression/
-├── train.py                  # Main training and plotting script
-├── models/mlp.py            # MLP model definition
-├── optim/get_optimizer.py   # Optimizer selector function
-├── plots/                   # Loss curves for each optimizer
-├── README.md                # Documentation (this file)
+├── optimizers_comparisons-ipynb   # Optimizer selector function
+├── Plots/                   # Loss curves for each optimizer
+├── readme.md                # Documentation (this file)
 ```
 
 ---
