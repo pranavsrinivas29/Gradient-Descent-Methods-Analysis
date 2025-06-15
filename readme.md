@@ -40,7 +40,8 @@ This small MLP is effective for tabular data and allows visible differences in o
 | **Adagrad**    | Adapts learning rate per parameter based on historical gradient accumulation. Can decay too quickly.
 | **Rprop**      | Resilient backpropagation – uses only the sign of gradient, not its magnitude. Not ideal for minibatches.
 
-For detailed theoretical information, please do read my related blog on this.
+For detailed theoretical information, please do read my related blog on Medium [Understanding Backpropagation and Its Variants](https://medium.com/@pranav10srinivas/understanding-backpropagation-and-its-variants-1b29ec180f59)
+
 ---
 
 ## ⚙️ Training Setup
